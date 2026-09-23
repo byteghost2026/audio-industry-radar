@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Android Developers Blog",
+    "url": "https://android-developers.googleblog.com/feeds/posts/default",
+    "category": "Android音频"
+  },
+  {
+    "name": "FFmpeg Releases",
+    "url": "https://github.com/FFmpeg/FFmpeg/releases.atom",
+    "category": "多媒体"
+  },
+  {
+    "name": "PipeWire Releases",
+    "url": "https://github.com/PipeWire/pipewire/releases.atom",
+    "category": "Linux音频"
+  },
+  {
+    "name": "WebRTC Releases",
+    "url": "https://github.com/webrtc-sdk/webrtc/releases.atom",
+    "category": "实时音频"
+  }
+]

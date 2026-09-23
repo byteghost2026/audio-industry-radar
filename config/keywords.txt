@@ -1,0 +1,59 @@
+Bluetooth LE Audio
+LC3
+Auracast
+A2DP
+HFP
+ASHA
+Bluetooth Audio
+Wi-Fi Audio
+Opus
+AAC
+LDAC
+aptX
+Spatial Audio
+AudioFlinger
+AudioTrack
+AudioRecord
+AAudio
+Audio HAL
+AudioPolicy
+Media3
+TinyALSA
+ALSA
+PipeWire
+FFmpeg
+WebRTC Audio
+USB Audio
+音频路由
+音频焦点
+音频 offload
+ANC
+ENC
+Beamforming
+波束成形
+回声消除
+AEC
+降噪
+语音增强
+麦克风阵列
+MEMS microphone
+DSP
+Smart Glasses
+AI Glasses
+AR Glasses
+XR
+Wearable
+Hearables
+Smartwatch
+Smart Ring
+Earbuds
+骨传导
+开放式耳机
+Qualcomm
+MediaTek
+BES
+Realtek
+Nordic
+Cirrus Logic
+Snapdragon Sound
+Wear OS

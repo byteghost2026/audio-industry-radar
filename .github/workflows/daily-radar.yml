@@ -1,0 +1,41 @@
+name: Audio Industry Radar
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 01:00 UTC = 09:00 Asia/Shanghai. GitHub scheduled jobs may be delayed.
+    - cron: "0 1 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  collect-and-push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Collect and push industry updates
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+        run: python src/main.py
+
+      - name: Persist deduplication state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/seen.json
+          if git diff --cached --quiet; then
+            echo "No state changes"
+          else
+            git commit -m "chore: update seen links"
+            git push
+          fi

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "GitHub 音频项目",
+    "query": "audio in:name,description,readme stars:>20",
+    "category": "GitHub项目"
+  },
+  {
+    "name": "GitHub 蓝牙音频项目",
+    "query": "bluetooth-audio in:name,description,readme stars:>10",
+    "category": "GitHub项目"
+  },
+  {
+    "name": "GitHub 空间音频项目",
+    "query": "spatial-audio in:name,description,readme",
+    "category": "GitHub项目"
+  },
+  {
+    "name": "GitHub 可穿戴项目",
+    "query": "smart-glasses OR wearable-audio in:name,description,readme",
+    "category": "智能硬件"
+  }
+]
